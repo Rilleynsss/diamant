@@ -1,0 +1,28 @@
+.btn{
+    color:#fff;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 27px 30px;
+    border:none;
+    border-radius: 50px;
+    background-color: var(--secondary);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-top{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:1650px) {
+    .btn{
+        padding: 27px 20px;
+    }
+}
+@media screen and (max-width:950px) {
+    .btn-top{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}

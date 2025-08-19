@@ -1,0 +1,219 @@
+.top{
+    position: relative;
+    grid-column:2;
+    grid-row: 1;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 350px;
+}
+.top-content{
+    position: relative;
+}
+.top-content::before {
+    content: 'Natural cosmetics with a taste of Ireland';
+    top: 400px;
+    left: 0;
+    position: absolute;
+    color: #63678C;
+    font-size: 36px;
+    line-height: 133%;
+    max-width: 327px;
+}
+.top-content_header {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 230px;
+    font-weight: 400;
+    color: var(--secondary);
+    position: relative;
+}
+.top-dandelion{
+    position: absolute;
+    width: 1455px;
+    height: 1113px;
+    top:-135px;
+    right: -20px;
+    z-index: -1;
+    margin-left: 500px;
+}
+.top-dandelion img{
+    width: 100%;
+}
+.top-dandelion:after{
+    content: 'We select a complex specifically for your skin type';
+    top: 0;
+    left: 1000px ;
+    color:#888794;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: block;
+    width: 172px;
+    position: relative;
+    text-align: right;
+    line-height: 25px;
+}
+.top-content_text{
+    position: relative;
+    margin-left: 500px;
+    max-width: 391px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-content_text h2{
+    width: 391px;
+    color: var(--textSecondary);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top:60px ;
+    margin-bottom: 70px;
+}
+.top-content_text span{
+    font-weight: 700;
+}
+.top-content_text_inform{
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: var(--textPrimary);
+    max-width: 391px;
+}
+.top-content_text_inform_left{
+    margin-top: 80px;
+    margin-left: -891px;
+}
+.top-content-text_grass{
+    position: absolute;
+    left: -900px;
+    top:230px;
+    width: 976px;
+    height: 648px;
+    opacity: .1;
+    transform: rotate(180deg);
+}
+.top-blueberry{
+    position: absolute;
+    top: 500px;
+    z-index: -6;
+    width: 100%;
+}
+.top-blueberry_text{
+    bottom: 670px;
+    left: 1100px;
+    position: absolute;
+    font-size: 36px;
+    font-weight: 300;
+    width: 300px;
+    color:var(--buttonColor)
+}
+.top-blueberry img{
+    position: absolute;
+    width: 100%;
+}
+@media screen and (max-width:1650px) {
+    .top{
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+    .top-content_header{
+        font-size: 200px;
+    }
+    .top-content::before{
+        left: 45%;
+        top: 300px;
+        max-width: 250px;
+        font-size: 30px;
+    }
+    .top-content_text{
+        margin-left: 100px;
+        width: 245px;
+    }
+    .top-content_text h2{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .top-content_text_inform{
+        font-size: 16px;
+    }
+    .top-content_text_inform_left{
+        margin-left: -100px;
+    }
+    .top-dandelion{
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 700px;
+        margin-left: 200px;
+    }
+    .top-dandelion img{
+        opacity: .6;
+    }
+    .top-dandelion:after{
+        left: 220px;
+    }
+    .top-blueberry{
+        position: absolute;
+    }
+    .top-blueberry img{
+        position: relative;
+    }
+    .top-blueberry_text{
+        left: auto;
+        right: 150px;
+        bottom: 550px;
+    }
+}
+@media screen and (max-width:950px){
+    .top{
+        margin-top: 100px;
+        margin-bottom: 335px;
+    }
+    .top-content_header {
+        font-size: 55px;
+    }
+    .top-content_text{
+        margin-left: 60px;
+        width: 270px;
+            position: relative;
+                z-index: 2;
+    }
+    .top-content_text h2{
+        width: 270px;
+        position: relative;
+        z-index: 2;
+    }
+    .top-content::before{
+        display: none;
+    }
+    .top-content_text_inform_left{
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+    .top-content-text_grass{
+        left: -700px;
+        z-index: -1;
+    }
+    .top-dandelion{
+        position: absolute;
+        margin-left: 0;
+        opacity: .3;
+        z-index: -1;
+        width: 100%;
+    }
+    .top-dandelion::after{
+        display:none ;
+    }
+    .top-blueberry{
+        top: 100%;
+        width: 100%;
+    }
+    .top-blueberry img{
+        width: 100%;
+    }
+    .top-blueberry_text{
+        left: 0;
+        bottom: 225px;
+    }
+}

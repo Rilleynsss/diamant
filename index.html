@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <title>Diamaint</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="header-container">
+            <article class="header-menu">
+                <img src="/assets/Logo.svg" alt="logo">
+                <nav>
+                    <ul class="header-menu_nav">
+                        <li><a href="#top">About</a></li>
+                        <li><a href="#choice">Catalog</a></li>
+                        <li><a href="#promotion">Promotion</a></li>
+                        <li><a href="#fact">Useful</a></li>
+                        <li><a href="#authors">Authors</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="header-basket">
+                <button class="header-basket_btn " data-count=""><img src="/assets/basket.svg" alt="basket"></button>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="header-phone">
+            <button class="header-phone_burger"> <span id="line"></span></button>
+            <article class="header-phone_modal">
+                <nav>
+                    <ul class="header-phone_nav">
+                        <li><a id="header-modal_link" href="#top">About</a></li>
+                        <li><a id="header-modal_link" href="#choice">Catalog</a></li>
+                        <li><a id="header-modal_link" href="#promotion">Promotion</a></li>
+                        <li><a id="header-modal_link" href="#fact">Useful</a></li>
+                        <li><a id="header-modal_link" href="#authors">Authors</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+    </header>
+    <main class="main">
+        <section id="top" class="top">
+            <article class="top-content">
+                <h1 class="top-content_header">Diamaint</h1>
+                <article class="top-content_text">
+                    <h2>Diamaint - <span>dandelion</span> in Irish</h2>
+                    <p class="top-content_text_inform">Cosmetics, after which you will never be the same again and will
+                        find a new life, where our
+                        products will
+                        be your
+                        faithful companion and assistant.</p>
+                    <p class="top-content_text_inform">We use the power of nature, as well as the latest industry
+                        developments, combined with
+                        traditional Irish
+                        recipes to give
+                        your skin a healthy and blooming appearance.</p>
+                    <a href="#choice" class="btn btn-top">Select product</a>
+                    <p class="top-content_text_inform">The basis consists of active natural complexes, vitamins C, A,
+                        PP, B and E, oils, waxes, minerals
+                        and
+                        natural sunscreen
+                        components</p>
+                    <img class="top-content-text_grass" src="/assets/grass.png" alt="">
+                    <p class="top-content_text_inform top-content_text_inform_left">The ingredients are quality and
+                        provenance controlled. Most of them are certified organic by
+                        Ecocert and Soil
+                        Association. The combination of parts in each line is selected taking into account the skin
+                        type.</p>
+                </article>
+            </article>
+
+            <section class="top-dandelion">
+                <img src="/assets/dandelion.png" alt="">
+            </section>
+            <section class="top-blueberry">
+                <img src="/assets/blueberry.png" alt="">
+                <h3 class="top-blueberry_text">Diamaint - only natural ingredients</h3>
+            </section>
+        </section>
+        <section id="choice" class="choice">
+            <img class="choice_img" src="/assets/choice_bg.png" alt="">
+            <h2 class="global-header">Choose your product</h2>
+            <ul class="choice-cards">
+                <li class="cards_card">
+                    <img class="cards_card_img" src="/assets/bottle1.png" alt="">
+                    <h4 class="cards_card_direction">for normal skin</h4>
+                    <h3 class="cards_card_name">Moisturizing mousse</h3>
+                    <article class="cards_card_price">
+                        <p>2 750 ₽</p> <button id="addToBasket"><img src="/assets/add-to-cart.svg" alt=""></button>
+                    </article>
+                </li>
+                <li class="choice-cards_card_large cards_card ">
+                    <img class="cards_card_img choice-cards_card_img_large" src="/assets/bottle2.png" alt="">
+                    <h4 class="cards_card_direction">for normal skin</h4>
+                    <h3 class="cards_card_name">Moisturizing mousse</h3>
+                    <article class="cards_card_price">
+                        <p><span>3 750</span> 3 500 ₽</p> <button id="addToBasket"><img src="/assets/add-to-cart.svg" alt=""></button>
+                    </article>
+                </li>
+                <li class="cards_card">
+                    <img class="cards_card_img_large" src="/assets/bottle3.png" alt="">
+                    <h4 class="cards_card_direction">for normal skin</h4>
+                    <h3 class="cards_card_name">Moisturizing mousse</h3>
+                    <article class="cards_card_price">
+                        <p>1 650 ₽</p> <button id="addToBasket"><img src="/assets/add-to-cart.svg" alt=""></button>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="promotion" class="promotion">
+            <section class="promotion-info">
+                <article class="promotion-info_text">
+                    <h2 class="global-header promotion-info_text_header">Promotions</h2>
+                    <p class="promotion-info_text_subheader">Every month we select a special line of products that you
+                        like and reduce the prices!</p>
+                </article>
+                <article class="promotion-info_card">
+                    <article class="promotion-info_card_wrapper">
+                        <h3 class="promotion-info_card_header">Invisible Symphony - Your Magic Wand to Fight
+                            Imperfections</h3>
+                        <p class="promotion-info_card_subheader">Combining the energy of nature and the possibilities of
+                            science, it restores
+                            your skin, helps cell regeneration,
+                            smoothes the texture, and intensively moisturizes for a long time.</p>
+                    </article>
+                    <img src="/assets/bottle2.png" alt="">
+                </article>
+            </section>
+            <img class="promotion-stick" src="/assets/stick.png" alt="stick">
+            <ul class="promotion-cards ">
+                <li class="cards_card">
+                    <img class="cards_card_img" src="/assets/promotion1.png" alt="">
+                    <h3 class="cards_card_name">When you purchase a moisturizer and mask, you get a 5% discount on all
+                        products</h3>
+                    <article class="cards_card_price">
+                        <p><span>5 000</span> 4 750 ₽</p> <button id="addToBasket"><img src="/assets/add-to-cart.svg" alt=""></button>
+                    </article>
+                </li>
+                <li class="cards_card">
+                    <img class="cards_card_img" src="/assets/promotion2.png" alt="">
+                    <h3 class="cards_card_name">When purchasing a moisturizing mousse and gel for washing, you get a 10%
+                        discount on all products</h3>
+                    <article class="cards_card_price">
+                        <p><span>4 400</span> 3 960 ₽</p> <button id="addToBasket"><img src="/assets/add-to-cart.svg" alt=""></button>
+                    </article>
+                </li>
+                <li class="cards_card">
+                    <img class="cards_card_img" src="/assets/promotion3.png" alt="">
+                    <h3 class="cards_card_name">When you purchase a moisturizer and mask, you get a 5% discount on all
+                        products</h3>
+                    <article class="cards_card_price">
+                        <p><span>9 400</span> 7 520 ₽</p><button id="addToBasket" ><img src="/assets/add-to-cart.svg" alt=""></button>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="fact" class="fact">
+            <article class="fact-wrapper">
+                <img class="fact-img" src="/assets/girl.png" alt="gril">
+                <div class="fact-content">
+                    <h3 class="fact-content_tests">We tested it and are happy with the result.</h3>
+                    <h2 class="fact-content_header">6800 <br /><span>womans</span></h2>
+                    <p class="fact-content_text">96% of women noticed a positive result after just one week of using the
+                        line of products. The skin became more
+                        well-groomed, moisturized and nourished. Inflammations disappeared or significantly decreased.
+                        And the pleasant aroma
+                        and light texture became an excellent addition to the morning and evening care rituals.</p>
+                </div>
+                <img class="fact-flowers" src="/assets/flowers.png" alt="flowers">
+            </article>
+        </section>
+        <section id="inform" class="inform">
+            <h2 class="global-header">Useful to know</h2>
+            <ul class="inform-cards">
+                <li class="inform-cards_card">
+                    <h4 class="inform-cards_card_advice">Advice</h4>
+                    <h3 class="inform-cards_card_header">How to choose a cream</h3>
+                    <p class="inform-cards_card_text">7 criteria for the right choice. Under the influence of the
+                        environment, the skin loses nutrients...</p>
+                </li>
+                <li class="inform-cards_card">
+                    <h4 class="inform-cards_card_advice">Advice</h4>
+                    <h3 class="inform-cards_card_header">What to add to your winter skincare routine</h3>
+                    <p class="inform-cards_card_text">In winter, facial skin is in particular need of care. Cold and
+                        wind, dry air in heated rooms...</p>
+                </li>
+                <li class="inform-cards_card">
+                    <h4 class="inform-cards_card_advice">Advice</h4>
+                    <h3 class="inform-cards_card_header">How to apply cream correctly</h3>
+                    <p class="inform-cards_card_text">Any skin type should not be rubbed too hard when cleansing or
+                        toning, all movements...</p>
+                </li>
+                <li class="inform-cards_card">
+                    <h4 class="inform-cards_card_advice">Advice</h4>
+                    <h3 class="inform-cards_card_header">How to Know Your Skin Type</h3>
+                    <p class="inform-cards_card_text">Some people have naturally oily skin, others have dry and thin
+                        skin, and it is believed that in modern conditions...</p>
+                </li>
+            </ul>
+        </section>
+        <section id="authors" class="authors">
+            <article class="authors-content">
+                <h2 class="global-header">Authors and ideologists</h2>
+                <h3 class="authors-content_name">Masha Shestyakova</h3>
+                <p class="authors-content_text">Masha is the main ideologist, creator of the project and part-time main
+                    source of recipes. Masha's gimmick is an Irish
+                    grandmother, a former model with an endless supply of folk recipes that she has tried on herself.
+                </p>
+                <h4 class="authors-content_postscript">I like to adapt the culture of my ancestors to the present. I
+                    feel like I am creating a thread between different eras.
+                    And the fact that my product makes girls beautiful and confident makes me feel happy!</h4>
+            </article>
+            <img class="authors-img" src="/assets/authors1.jpg" alt="authors">
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-content">
+            <h3 class="footer-content_header">Contacts</h3>
+            <p class="footer-content_contacts">+7 495 550 50 50</p>
+            <p class="footer-content_contacts">Moscow, Preseneskiy Val 21</p>
+        </section>
+    </footer>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

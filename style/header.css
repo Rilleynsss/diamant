@@ -1,0 +1,246 @@
+.header {
+    background-color: var(--primary);
+    display: grid;
+    grid-template-columns: auto 1600px auto;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+}
+
+.header-container {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-basket {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu img {
+    width: 67px;
+    height: 67px;
+}
+
+.header-menu nav {
+    margin-left: 70px;
+}
+
+.header-menu_nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu_nav a {
+    color: var(--secondary);
+    opacity: .7;
+    padding: 25px 15px;
+}
+
+.header-basket_btn {
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 18px 20px;
+    margin-right: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-basket_btn_count::after {
+    content: attr(data-count);
+    position: absolute;
+    background-color: var(--buttonColor);
+    max-width: 21px;
+    max-height: 21px;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    color: #fff;
+    font-size: 14px;
+    /* padding: 4px 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.header-basket_btn img {
+    width: 20px;
+    height: 24px;
+}
+
+.header-basket li {
+    padding: 5px 0;
+}
+
+.header-basket a {
+    color: var(--secondary);
+}
+
+.header-phone_burger {
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.header-phone_burger span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #515076;
+    transition: all .3s ease;
+    transition: height .3s .3s;
+}
+
+.header-phone_burger span::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #515076;
+    top: -7px;
+    left: 0;
+    transition: transform .3s .0s, top .3s .3s, height .3s .5s;
+}
+
+.header-phone_burger span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #515076;
+    top: 7px;
+    left: 0;
+    transition: transform .3s .0s, top .3s .3s, width .3s .3s;
+}
+
+.header-phone_burger.burger-active span {
+    height: 0;
+    transition: height .1s .3s;
+}
+
+.header-phone_burger.burger-active span::before {
+    transform: rotate(-45deg);
+    top: 0px;
+    transition: transform .3s .3s, top .3s 0s;
+}
+
+.header-phone_burger.burger-active span::after {
+    transform: rotate(45deg);
+    top: 0px;
+    transition: transform .3s .3s, top .3s 0s;
+}
+
+.header-phone_active {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+.header-phone_modal{
+    position: fixed;
+    width: 100%;
+    height: 0px;
+    background-color: #EDECF6;
+    left: 0px;
+    top: 0;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.header-phone_modal_active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #EDECF6;
+    left: 0px;
+    top: 0;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.header-phone_nav{
+    display: none;
+    flex-direction: column;
+    padding: 100px 80px;
+    height: 100vh;
+    justify-content: space-between;
+}
+.header-phone_nav_active{
+    display: flex;
+}
+.header-phone_nav a{
+    color: var(--secondary);
+    font-size: 40px;
+    padding: 0 0;
+}
+@media screen and (max-width:1650px) {
+    .header {
+        grid-template-columns: auto 900px auto;
+    }
+
+    .header-phone {
+        display: none;
+    }
+
+    .header-phone_burger {
+        display: none;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .header {
+        display: grid;
+        grid-template-columns: auto 100vw auto;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+    }
+    .header-menu img{
+        height: 34px;
+        width: 34px;
+    }
+    .header-container{
+        width: 100%;
+    }
+    .header-menu{
+        position: relative;
+        left: 20px;
+    }
+    .header-menu nav {
+        display: none;
+    }
+
+    .header-basket {
+        display: none;
+    }
+
+    .header-phone {
+        display: block;
+        grid-row: 1;
+        grid-column: 2;
+        position: relative;
+        left: calc(100% - 70px);
+        width: 50px;
+    }
+
+    .header-phone_burger {
+        display: block;
+    }
+}

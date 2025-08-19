@@ -1,0 +1,206 @@
+.promotion {
+    grid-column: 2;
+    margin-top: 180px;
+    position: relative;
+}
+
+.promotion-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.promotion-info_text_subheader {
+    width: 333px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #888794;
+    margin-top: 100px;
+    line-height: 30px;
+}
+
+.promotion-info_card {
+    height: 521px;
+    width: 810px;
+    padding: 72px 63px;
+    background-color: #F7F7FA;
+    position: relative;
+    box-shadow: -30px 30px 0px 5px #515076;
+    display: flex;
+    align-items: end;
+}
+
+.promotion-info_card:before {
+    content: 'for normal skin';
+    bottom: 60px;
+    left: -80px;
+    text-transform: uppercase;
+    position: absolute;
+    transform: rotate(-90deg);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.promotion-info_card_header {
+    color: #4C5072;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 130%;
+    width: 310px;
+    margin-bottom: 20px;
+}
+
+.promotion-info_card_subheader {
+    color: var(--textPrimary);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 200%;
+}
+
+.promotion-stick {
+    position: absolute;
+    left: -70px;
+    top: 0;
+}
+
+.promotion-cards {
+    display: flex;
+    margin-top: 350px;
+    justify-content: center;
+}
+
+.promotion-cards li {
+    position: relative;
+    padding-top: 0;
+    width: 350px;
+}
+
+.promotion-cards li:nth-child(1) {
+    height: 600px;
+}
+
+.promotion-cards li:nth-child(2) {
+    height: 700px;
+    top: -100px;
+}
+
+.promotion-cards li:nth-child(3) {
+    height: 800px;
+    top: -200px;
+}
+
+.promotion-cards li:before{
+    width: 350px;
+    position: absolute;
+    color: #515076;
+    font-size: 36px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+.promotion-cards li:nth-child(1):before {
+    content: 'SALE 5%';
+    background-color: #5150761A;
+    min-height: 100px;
+}
+.promotion-cards li:nth-child(2):before {
+    content: 'SALE 10%';
+    background-color: #51507626;
+    min-height: 150px;
+}
+.promotion-cards li:nth-child(3):before {
+    content: 'SALE 20%';
+    background-color: #51507633;
+    min-height: 200px;
+}
+
+@media screen and (max-width:1650px) {
+    .promotion{
+        padding: 0 30px;
+        overflow: hidden;
+    }
+    .promotion-info{
+        flex-direction: column;
+    }
+    .promotion-info_text_subheader{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .promotion-stick{
+        z-index: -1;
+        left: 20px;
+        top: 20px;
+    }
+    .promotion-cards li{
+        width: 275px;
+    }
+        .promotion-cards li:before{
+            width: 275px;
+        }
+}
+
+@media screen and (max-width:950px) {
+    .promotion{
+        margin-top: 40px;
+    }
+    .promotion-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .promotion-info_text_subheader{
+        margin-top: 40px;
+    }
+    .promotion-info_card{
+        width: 335px;
+        height: 620px;
+        flex-direction: column;
+        padding: 20px 10px;
+        box-shadow: -10px 25px 0px 5px #515076;
+        border: 3px solid #51507629;
+        margin-top: 50px;
+    }
+
+    .promotion-info_card::before{
+        transform: rotate(0deg);
+        left: 0;
+        bottom: -20px;
+    }
+    .promotion-stick{
+        z-index: -2;
+        top: 750px;
+        width: 350px;
+        left: 0;
+    }
+    .promotion-cards{
+        flex-direction: column;
+        /* justify-content: space-between; */
+        margin-top: 150px;
+    }
+    .promotion-cards li{
+        margin-top: 100px;
+    }
+    .promotion-cards li:nth-child(1){
+        height: 470px;
+    }
+    .promotion-cards li:nth-child(2) {
+        height: 550px;
+    }
+    .promotion-cards li:nth-child(3) {
+        height: 570px;
+    }
+    .promotion-cards li:nth-child(1):before{
+        min-height: 50px;
+    }
+    .promotion-cards li:nth-child(2):before {
+        min-height: 75px;
+    }
+    .promotion-cards li:nth-child(3):before {
+        min-height: 95px;
+    }
+    .promotion-cards li:before{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,31 @@
+.choice{
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.choice_img{
+    position: absolute;
+    left: -300px;
+    transform: rotate(30deg);
+}
+.choice-cards{
+    display: flex;
+    margin-top: 159px;
+}
+
+@media screen and (max-width:950px) {
+    .choice{
+        overflow: hidden;
+    }
+    .choice_img{
+        width: 350px;
+        left: 0;
+    }
+    .choice-cards{
+        flex-direction: column;
+    }
+}

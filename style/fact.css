@@ -1,0 +1,134 @@
+.fact{
+    grid-column-start:1 ;
+    grid-column-end: 4;
+    background-color: var(--primary);
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1600px auto;
+    position: relative;
+}
+.fact-wrapper{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    margin-top: 60px;
+}
+.fact-wrapper:before{
+    content: 'Diamaint';
+    font-family: 'Playfair Display',sans-serif;
+    font-weight: 400;
+    font-size: 330px;
+    color:#D6D4E7;
+    position: absolute;
+    top: -310px;
+
+}
+.fact-img{
+    width: 1066px;
+    height: 821px;
+    margin-top: 100px;
+}
+.fact-content{
+    position: relative;
+    z-index: 2;
+}
+.fact-content_tests{
+    font-weight: 500;
+    font-size: 20px;
+    color:#A5A3B9;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    width: 500px;
+}
+.fact-content_header{
+    font-weight: 300;
+    font-size: 120px;
+    color:var(--secondary);
+    line-height: 70px;
+}
+.fact-content_header span{
+    font-weight: 200;
+    font-size: 70px;
+}
+.fact-content_text{
+    font-weight: 500;
+    font-size: 16px;
+    color:var(--textPrimary);
+    margin-top: 30px;
+}
+.fact-flowers{
+    position: absolute;
+    right: -300px;
+    z-index: 0;
+    bottom: -200px;
+}
+
+@media screen and (max-width:1650px) {
+    .fact{
+        grid-template-columns: auto 900px auto;
+    }
+    .fact-wrapper{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .fact-wrapper:before{
+        font-size: 200px;
+        top: -215px;
+    }
+    .fact-content_header{
+        font-size: 100px;
+        line-height: 55px;
+    }
+    .fact-content_header span{
+        font-size: 60px;
+    }
+    .fact-img{
+        width: 615px;
+        height: auto;
+        margin-top: 0;
+    }
+    .fact-flowers{
+        display: none;
+    }
+    .fact-content{
+        left: -85px;
+    }
+}
+@media screen and (max-width:950px){
+    .fact{
+        grid-template-columns: auto 350px auto;
+        height: 100%;
+    }
+    .fact-wrapper{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .fact-wrapper:before{
+        font-size: 75px;
+        top: -130px;
+    }
+    .fact-img{
+        width: 350px;
+        height: 270px;
+        margin-top: 0;
+    }
+    .fact-content_tests{
+        width: 350px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .fact-content_header{
+        font-size: 70px;
+        line-height: 45px;
+    }
+    .fact-content_header span{
+        font-size: 50px;
+    }
+    .fact-flowers{
+        display: none;
+    }
+}
