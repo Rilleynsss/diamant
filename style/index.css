@@ -76,7 +76,7 @@ li{
     margin-top: -79px;
 }
 .choice-cards_card_large:before {
-    content: url('./assets/percent.svg');
+    content: url('../assets/percent.svg');
     position: absolute;
     top: 19px;
     left: 19px;
